@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Input the redius and get the value of sphare</h2>
+    <label >Redius</label><br>
+    <input type="number" id="redius">
+    <br><br>
+    <label >Volume</label><br>
+    <input id="ans">
+    <br><br>
+    <button id="btn" onclick="Volume()">Calculate</button>
+    </body>
+    <script>
+     function Volume(){
+        var abc=document.getElementById("redius").value;
+        var xyz=parseInt(abc);
+        var answer=(4/3)*Math.PI*Math.pow(xyz,3);
+        document.getElementById("ans").value=answer;
+     }
+
+        
+    </script>
+
+</html>
